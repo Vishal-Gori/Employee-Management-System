@@ -1,0 +1,503 @@
+*
+{
+	font-size:110%;
+	font-family: Mulish;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(45deg, #0a0a0a, #3a4452); */
+    /* background: linear-gradient(180deg, #80D0C7, #0093e9, #80D0C7); */
+	background-image: url("https://payroll-assets.razorpay.com/assets/desktop/login-bg.png");
+	background-size: auto ;
+	
+	/* background-image: linear-gradient(to right, #3068b9, #4374c2, #5380cb, #638cd3, #7298dc, #6ea5e7, #6bb2f0, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+	/* background-repeat: linear-gradient(180deg, #80D0C7, #0093e9); */
+}
+h2{
+	color: white;
+}
+/* h2:hover{
+	padding-top: 100px;
+} */
+h3{
+	color: white;
+}
+
+.forgotp{
+	font-size: 50%;
+	margin-left: 20%;
+	/*
+	margin-bottom: 100px; */
+}
+
+.card {
+	width: 30%;
+	height: 100%;
+	background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+	border-radius: 20px;
+	transition: all .3s;
+   }
+   
+   .card2 {
+	width: 100%;
+	height: 100%;
+	background-color: #1a1a1a;
+	border-radius: 20px;
+	transition: all .2s;
+   }
+   
+   .card2:hover {
+	transform: scale(0.98);
+	border-radius: 20px;
+   }
+   
+   .card:hover {
+	box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+
+   .nav {
+	height: 50px;
+	width: 100%;
+	/* background-color: #4d4d4d; */
+	background-color: #3f2860;
+	position: relative;
+  }
+  
+  .nav > .nav-header {
+	display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+	display: none;
+  }
+  
+  .nav > .nav-links {
+	display: inline;
+	margin: 10%;
+	font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+	display: inline-block;
+	margin-right: 50px;
+	padding: 13px 10px 13px 10px;
+	text-decoration: none;
+	color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+	display: none;
+  }
+  
+  @media (max-width:600px) {
+	.nav > .nav-btn {
+	  display: inline-block;
+	  position: absolute;
+	  right: 0px;
+	  top: 0px;
+	}
+	.nav > .nav-btn > label {
+	  display: inline-block;
+	  width: 50px;
+	  height: 50px;
+	  padding: 13px;
+	}
+	.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+	  background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nav > .nav-btn > label > span {
+	  display: block;
+	  width: 25px;
+	  height: 10px;
+	  border-top: 2px solid #eee;
+	}
+	.nav > .nav-links {
+	  position: absolute;
+	  display: block;
+	  width: 100%;
+	  background-color: #333;
+	  height: 0px;
+	  transition: all 0.3s ease-in;
+	  overflow-y: hidden;
+	  top: 50px;
+	  left: 0px;
+	}
+	.nav > .nav-links > a {
+	  display: block;
+	  width: 100%;
+	}
+	.nav > #nav-check:not(:checked) ~ .nav-links {
+	  height: 0px;
+	}
+	.nav > #nav-check:checked ~ .nav-links {
+	  height: calc(100vh - 50px);
+	  overflow-y: auto;
+	}
+  }
+  .logo-image{
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-top: -6px;
+  }
+
+  .buttonL {
+	all: unset;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 0.1em 2em;
+	border: mediumspringgreen solid 0.15em;
+	border-radius: 0.25em;
+	color: mediumspringgreen;
+	font-size: 45%;
+	font-weight: 600;
+	cursor: pointer;
+	overflow: hidden;
+	transition: border 300ms, color 300ms;
+	user-select: none;
+  }
+  
+  .buttonL p {
+	z-index: 1;
+  }
+  
+  .buttonL:hover {
+	color: #212121;
+  }
+  
+  .buttonL:active {
+	border-color: teal;
+  }
+  
+  .buttonL::after, .buttonL::before {
+	content: "";
+	position: absolute;
+	width: 9em;
+	aspect-ratio: 1;
+	background: mediumspringgreen;
+	opacity: 50%;
+	border-radius: 50%;
+	transition: transform 500ms, background 300ms;
+  }
+  
+  .buttonL::before {
+	left: 0;
+	transform: translateX(-8em);
+  }
+  
+  .buttonL::after {
+	right: 0;
+	transform: translateX(8em);
+  }
+  
+  .buttonL:hover:before {
+	transform: translateX(-1em);
+  }
+  
+  .buttonL:hover:after {
+	transform: translateX(1em);
+  }
+  
+  .buttonL:active:before,
+  .buttonL:active:after {
+	background: teal;
+  }
+
+  .button {
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	padding: 9px 12px;
+	gap: 8px;
+	height: 40px;
+	width: auto;
+	border: none;
+	
+	background: transparent;
+	border-radius: 10px;
+	cursor: pointer;
+  }
+  
+  .lable {
+	
+    /* text-align: left; */
+	color: #fff;
+	letter-spacing: 2px;
+  }
+  lable{
+	font-size: xx-small;
+  }
+  
+  .lable:hover {
+	color: #e52e26;
+  }
+
+  #login {
+	border-radius: 10px;
+	background-color: #099c4e;
+	border: 10px ;
+  }
+  #login:hover{
+	background-color: #5cb55c;
+	background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  }
+  #reg {
+	border-radius: 10px;
+	background-color: #0581d3;
+	color: white;
+	font-size: small;
+  }
+  #reg:hover{
+	background-color: #095a9c;
+  }
+
+  .form {
+	--width-of-input: 200px;
+	--border-height: 1px;
+	--border-before-color: rgba(221, 221, 221, 0.39);
+	--border-after-color: #5891ff;
+	--input-hovered-color: #4985e01f;
+	position: relative;
+	width: var(--width-of-input);
+   }
+   /* styling of Input */
+   .input {
+	color: #fff;
+	font-size: 0.9rem;
+	background-color: transparent;
+	width: 100%;
+	box-sizing: border-box;
+	padding-inline: 0.5em;
+	padding-block: 0.7em;
+	border: none;
+	border-bottom: var(--border-height) solid var(--border-before-color);
+   }
+   /* styling of animated border */
+   .input-border {
+	position: absolute;
+	background: var(--border-after-color);
+	width: 0%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	transition: 0.3s;
+   }
+   /* Hover on Input */
+   input:hover {
+	background: var(--input-hovered-color);
+   }
+   
+   input:focus {
+	outline: none;
+   }
+   /* here is code of animated border */
+   input:focus ~ .input-border {
+	width: 100%;
+   }
+   /* === if you want to do animated border on typing === */
+   /* remove input:focus code and uncomment below code */
+   /* input:valid ~ .input-border{
+	 width: 100%;
+   } */
+
+   textarea{
+	resize: none;
+   }
+   th {
+	background-color: #047baa;
+	color: white;
+  }
+  tr:nth-child(odd) {background-color: #72d5e2;}
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  
+  th, td {
+	padding: 8px;
+	text-align: left;
+  }
+
+  #star{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  }
+  .on {
+	background: transparent;
+	color: #FFDF00;
+  }
+  .off {
+	background: #000;
+	color: black;
+  }
+
+  .wrapper-2 p{
+	margin:0;
+	font-size:1.3em;
+	color:#aaa;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing:1px;
+  }
+  .go-home{
+	color:#fff;
+	background:#5892FF;
+	border:none;
+	padding:10px 50px;
+	margin:30px 0;
+	border-radius:30px;
+	text-transform:capitalize;
+	box-shadow: 0 10px 16px 1px rgba(174, 199, 251, 1);
+  }
+  h1{
+  font-family: 'Kaushan Script', cursive;
+  font-size:3em;
+  letter-spacing:3px;
+  color:#58ffbf ;
+  margin:0;
+  margin-bottom:20px;
+}
+option{
+	background-color: #0093e9;
+	color: #000;
+}
+div {
+	margin-bottom: 10px;
+}
+::-webkit-scrollbar {
+    background-color: #282f51;
+    height: 6px;
+    width: 6px;
+}
+::-webkit-scrollbar-corner {
+    background-color: #282f51;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.24);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #282f51;
+    border-radius: 5px;
+}
+form label {
+    color: #caccd5;
+    display: block;
+    font-family: Mulish,sans-serif;
+    line-height: 1.5;
+    margin-top: 10px;
+    width: 100%;
+	font-size: medium;
+	text-align: left;
+}
+#update{
+	background-color: #0093e9;
+	color: white;
+	border-radius: 10px;
+}
+#update:hover{
+	background-color: #282f51;
+	color: #0093e9;
+	border-radius: 10px;
+}
+#delete {
+	background-color: #e52e26;
+	color: white;
+	border-radius: 10px;
+}
+#delete:hover {
+	background-color: #282f51;
+	color: #e52e26;
+	border-radius: 10px;
+}
+/* <!-- HTML !-->
+<button class="button-24" role="button">Button 24</button> */
+
+/* CSS */
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+/* <!-- HTML !-->
+<button class="button-59" role="button">Button 59</button> */
+
+/* CSS */
+.button-25 {
+	background: #0093e9;
+	border: 1px solid blue;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 16px;
+	min-height: 40px;
+	outline: 0;
+	padding: 12px 14px;
+	text-align: center;
+	text-rendering: geometricprecision;
+	text-transform: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+  }
+  
+  .button-25:hover,
+  .button-25:active {
+	background-color: initial;
+	background-position: 0 0;
+	color: blue;
+  }
+  
+  .button-25:active {
+	opacity: .5;
+  }
